@@ -1,73 +1,56 @@
-# CLAUDE.md — Inicialização do Projeto
+# CLAUDE.md — Slim Concept Project
 
-> Leia este arquivo **antes de qualquer ação**. Ele orienta o comportamento do Claude durante todo o projeto.
-
----
-
-## Passo 1 — Carregar contexto
-
-Ao iniciar, ler obrigatoriamente (se existirem):
-
-1. `_contexto/empresa.md` — quem é o cliente/empresa e o que faz
-2. `_contexto/preferencias.md` — como o cliente quer trabalhar
-3. `_contexto/estrategias.md` — decisões técnicas e de produto já tomadas
-4. `.claude/comandos.md` — atalhos e comandos customizados disponíveis
-5. `.claude/ignorar.md` — o que nunca fazer neste projeto
-
-Se algum desses arquivos estiver **vazio ou ausente**, avisar ao usuário antes de continuar.
+> Este arquivo orienta o comportamento do Claude para o projeto Slim Concept.
 
 ---
 
-## Passo 2 — Entender o pedido
-
-- Reformular a tarefa em 1 frase antes de executar, se for complexa.
-- Se faltar informação crítica, fazer **uma única pergunta** objetiva.
-- Não perguntar o óbvio. Assumir o que der, informar o que foi assumido.
-
----
-
-## Passo 3 — Executar com velocidade e qualidade
-
-- Prioridade: **entregar rápido e funcionando**.
-- Seguir as convenções já existentes no projeto (checar código ao redor antes de escrever).
-- Documentação detalhada só se explicitamente pedida — foco é no código/entrega.
-- Avisar se uma decisão pode gerar dívida técnica, mas não travar por isso.
-
----
-
-## Passo 4 — Resumo rápido ao final
-
-Sempre encerrar com:
-- ✅ O que foi feito
-- ⚠️ O que ficou pendente ou exige atenção
-- 💡 Sugestão de próximo passo (opcional)
-
----
-
-## Estrutura do projeto
+## 🏗️ Estrutura do Projeto
 
 ```
-projeto/
-├── CLAUDE.md                  # Este arquivo
-├── _contexto/
-│   ├── empresa.md             # Quem é o cliente/empresa
-│   ├── preferencias.md        # Como o cliente quer trabalhar
-│   └── estrategias.md         # Decisões técnicas e de produto
-├── .claude/
-│   ├── comandos.md            # Atalhos e comandos customizados
-│   └── ignorar.md             # O que nunca fazer neste projeto
-├── README.md                  # Documentação pública do projeto
-├── src/                       # Código-fonte
-├── tests/                     # Testes
-└── docs/                      # Documentação técnica (preencher depois se necessário)
+Slim Concept/
+├── landing-page/           # Site Principal (PROD)
+│   ├── index.html          # Landing Page
+│   ├── portfolio.html      # Galeria de fotos/vídeos
+│   ├── style.css           # Design System (Neon/Cyber)
+│   └── script.js           # Lógica (FAQ, Menu, Filtros)
+├── concept-v2/             # Protótipo Experimental
+├── README.md               # Documentação Geral
+├── empresa.md              # Contexto do Negócio
+└── estrategias.md          # Stack e Decisões Técnicas
 ```
 
 ---
 
-## Regras universais
+## 🎨 Design System (Cyber-Slim)
 
-- ❌ Nunca apagar ou sobrescrever arquivos sem confirmar.
-- ❌ Nunca instalar dependências sem avisar.
-- ❌ Nunca inventar bibliotecas ou APIs que não existem.
-- ✅ Sempre verificar o que já existe antes de criar algo novo.
-- ✅ Stack mista — checar linguagem/framework do projeto antes de assumir.
+- **Cores**: 
+  - Red: `#ff2d2d` (Glow: `rgba(255, 0, 0, 0.6)`)
+  - Blue: `#2d38ff` (Glow: `rgba(0, 12, 255, 0.6)`)
+  - BG: `#090909`
+- **Tipografia**:
+  - Títulos: 'Bebas Neue' (Display)
+  - Corpo: 'Inter' ou 'Manrope' (Sans-serif)
+- **Efeitos**: 
+  - Glassmorphism em headers e overlays.
+  - Neon glow intenso em logos e CTAs.
+  - Hovers com escala e brilho.
+
+---
+
+## 🚀 Regras de Implementação
+
+1. **Performance**: Sempre usar `loading="lazy"` em imagens e `width/height` em vídeos.
+2. **Ícones**: Usar `Lucide Icons` (`i data-lucide="..."`) e inicializar no final do body.
+3. **Responsividade**: Mobile-first é mandatório. Testar sempre em `500px` (viewport padrão mobile).
+4. **Git**: Sempre commit após mudanças significativas no layout ou funcionalidades.
+
+---
+
+## ✅ Comandos Úteis
+
+- `git status`: Verificar alterações.
+- `git commit -m "tipo: descrição"`: Commitar mudanças.
+- `git push`: Subir para o GitHub.
+
+---
+Última atualização: Maio 2026.

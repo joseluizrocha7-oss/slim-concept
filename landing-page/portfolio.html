@@ -9,10 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&family=Manrope:wght@400;500&display=swap" as="style">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
   <style>
     /* ─── Portfolio-specific tokens ─────────────────────────────── */
+    @font-face { font-display: swap; }
     :root {
+      --header-h: 72px;
       --frame-opacity:    0.55;
       --frame-glow:       0.18;
       --frame-hover-op:   1;
@@ -482,7 +486,7 @@
       </div>
       <div class="port-vid-item">
         <div class="port-vid-inner">
-          <video src="../Marketing/assets/videos/insta_video_C-nKwOoOR97_c44e9f.mp4" muted loop playsinline autoplay></video>
+          <video src="assets/videos/v1.mp4" muted loop playsinline autoplay width="400" height="711"></video>
         </div>
       </div>
       <div class="port-vid-item">

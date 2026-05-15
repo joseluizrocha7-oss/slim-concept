@@ -1,39 +1,35 @@
-# Projeto Skeleton — Estrutura Base para Projetos com Claude
+# Slim Concept — Neon LED Personalizado
 
-Este é um esqueleto de projeto pronto para ser copiado e adaptado a qualquer novo projeto.
+Site institucional e portfólio para a **Slim Concept**, ateliê de neon LED em Sorocaba/SP.
 
-## Como usar
+## 🚀 Estrutura do Projeto
 
-1. **Copie esta pasta** para o novo projeto.
-2. **Preencha os arquivos de contexto** em `_contexto/` antes de começar a trabalhar com o Claude:
-   - `empresa.md` → descreva o cliente/empresa e o projeto
-   - `preferencias.md` → como o cliente quer trabalhar
-   - `estrategias.md` → decisões técnicas e de produto já tomadas
-3. **Ajuste as restrições** em `.claude/ignorar.md` conforme o projeto.
-4. **Personalize os atalhos** em `.claude/comandos.md` se quiser novos comandos.
-5. O `CLAUDE.md` na raiz já orienta o Claude a ler tudo isso automaticamente.
+- `landing-page/`: Versão atual em produção (HTML/CSS/JS Vanilla).
+- `concept-v2/`: Protótipo da nova versão.
+- `site/`: Versão experimental em Next.js.
+- `Marketing/`: Assets e recursos de campanha.
 
-## Estrutura
+## 🛠️ Tecnologias e Recursos
 
-```
-projeto/
-├── CLAUDE.md                  # Instruções de inicialização para o Claude
-├── README.md                  # Este arquivo
-├── _contexto/
-│   ├── empresa.md             # Quem é o cliente/empresa e o que faz
-│   ├── preferencias.md        # Estilo de trabalho e entregas
-│   └── estrategias.md         # Stack, arquitetura e decisões técnicas
-└── .claude/
-    ├── comandos.md            # Atalhos de comando (/revisar, /rapido, etc.)
-    └── ignorar.md             # Restrições absolutas do projeto
-```
+- **Core**: HTML5, CSS3, JavaScript (Vanilla).
+- **Design**: Estética Cyber-Slim (Neon, Bebas Neue, Dark Mode).
+- **Ícones**: [Lucide Icons](https://lucide.dev/) via CDN.
+- **Responsividade**: Mobile-first com foco em performance.
+- **Versionamento**: Git via GitHub.
 
-## Fluxo esperado
+## 📈 Otimizações de Performance
 
-```
-Novo projeto
-    → Copiar skeleton
-    → Preencher _contexto/
-    → Abrir conversa com Claude
-    → Claude lê CLAUDE.md → lê _contexto/ → começa a trabalhar
-```
+- **Lazy Loading**: Aplicado em todas as imagens do portfólio.
+- **Preload de Fontes**: Carregamento priorizado para Bebas Neue e Inter.
+- **Layout Shift (CLS)**: Dimensões fixas em vídeos e containers principais.
+- **Lucide Defer**: Script de ícones carregado de forma não-bloqueante.
+
+## 📂 Contexto do Projeto
+
+As diretrizes de negócio, preferências de design e estratégias estão documentadas nos arquivos:
+- `empresa.md`: Informações sobre o ateliê e público-alvo.
+- `preferencias.md`: Estilo visual e tom de voz.
+- `estrategias.md`: Stack técnica e decisões de arquitetura.
+
+---
+© 2026 Slim Concept — Sorocaba/SP.
