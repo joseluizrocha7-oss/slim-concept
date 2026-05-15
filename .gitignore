@@ -1,0 +1,21 @@
+# Dependências
+node_modules/
+.next/
+out/
+build/
+
+# Pastas de Backup/Assets Pesados (não usados no site final)
+Marketing/
+concept-v2/
+site/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Vídeos muito pesados (>25MB para Cloudflare)
+*.mp4
+!landing-page/assets/videos/hero-bg.mp4
+!landing-page/assets/videos/v1.mp4
+!landing-page/assets/videos/v2.mp4
+!landing-page/assets/videos/v3.mp4
