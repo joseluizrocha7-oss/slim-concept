@@ -59,8 +59,14 @@ h1, h2, h3 {
 }
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
 .text-logo { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--fg); letter-spacing: 0.05em; line-height: 1; font-weight: 400; }
-.l-red { color: var(--red); text-shadow: 0 0 12px var(--red-glow); }
-.l-blue { color: var(--blue); text-shadow: 0 0 12px var(--blue-glow); }
+.l-red { 
+  color: #ff9090; 
+  text-shadow: 0 0 4px #fff, 0 0 8px var(--red), 0 0 16px var(--red), 0 0 32px var(--red); 
+}
+.l-blue { 
+  color: #a0adff; 
+  text-shadow: 0 0 4px #fff, 0 0 8px var(--blue), 0 0 16px var(--blue), 0 0 32px var(--blue); 
+}
 .neon-dot-red, .neon-dot-blue { width: 8px; height: 8px; border-radius: 50%; }
 .neon-dot-red { background: var(--red); box-shadow: 0 0 10px var(--red-glow), 0 0 20px var(--red); }
 .neon-dot-blue { background: var(--blue); box-shadow: 0 0 10px var(--blue-glow), 0 0 20px var(--blue); }
