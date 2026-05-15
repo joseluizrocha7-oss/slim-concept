@@ -4,18 +4,27 @@ node_modules/
 out/
 build/
 
-# Pastas de Backup/Assets Pesados (não usados no site final)
+# Pastas de Backup/Assets Pesados (ignorados)
 Marketing/
 concept-v2/
 site/
+landing-page/
 
 # Arquivos de sistema
 .DS_Store
 Thumbs.db
 
-# Vídeos muito pesados (>25MB para Cloudflare)
+# Vídeos e Imagens
+# Permitir a pasta assets e seu conteúdo explicitamente
+!assets/
+!assets/**
+
+# Bloquear apenas vídeos especificamente pesados se necessário, 
+# mas por enquanto vamos liberar os da pasta assets
 *.mp4
-!landing-page/assets/videos/hero-bg.mp4
-!landing-page/assets/videos/v1.mp4
-!landing-page/assets/videos/v2.mp4
-!landing-page/assets/videos/v3.mp4
+!assets/videos/hero-bg.mp4
+!assets/videos/v1.mp4
+!assets/videos/v2.mp4
+!assets/videos/v3.mp4
+!assets/videos/WhatsApp*.mp4
+!assets/videos/insta_video*.mp4
