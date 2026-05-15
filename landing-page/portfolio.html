@@ -33,15 +33,26 @@
       background: linear-gradient(90deg, transparent, var(--red), var(--blue), transparent);
       opacity: 0.5;
     }
-    .port-hero-inner { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+    .port-hero-inner { 
+      display: flex; 
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+    }
     .port-hero h1 {
       font-family: var(--font-d, 'Bebas Neue');
-      font-size: clamp(3.5rem, 9vw, 7rem);
-      line-height: 1;
+      font-size: clamp(3.5rem, 10vw, 8rem);
+      line-height: 0.9;
       letter-spacing: 0.01em;
+      margin-bottom: 8px;
     }
-    .port-hero-meta { text-align: right; }
-    .port-hero-meta p { font-family: var(--font-s, 'Inter'); font-size: 0.95rem; color: var(--fg2); line-height: 1.7; max-width: 340px; }
+    .port-hero-meta { text-align: left; max-width: 580px; }
+    .port-hero-meta p { 
+      font-family: var(--font-s, 'Inter'); 
+      font-size: 1.1rem; 
+      color: var(--fg2); 
+      line-height: 1.6; 
+    }
     .port-back {
       display: inline-flex; align-items: center; gap: 6px;
       font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em;
