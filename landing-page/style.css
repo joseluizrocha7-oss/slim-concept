@@ -492,5 +492,85 @@ section{padding:80px 0}
 .fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
 .fade-up.visible{opacity:1;transform:translateY(0)}
 
+/* ===== DESKTOP HOVER EFFECTS ===== */
+@media (hover: hover) {
+  /* Links glow on hover */
+  a:not(.btn-primary):not(.btn-ghost):not(.btn-tel):not(.header-cta):not(.wpp-float):not(.cat-card):not(.logo) {
+    transition: color 0.25s, text-shadow 0.25s;
+  }
+  a:not(.btn-primary):not(.btn-ghost):not(.btn-tel):not(.header-cta):not(.wpp-float):not(.cat-card):not(.logo):hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255,255,255,0.4);
+  }
+
+  /* Nav links underline slide */
+  .nav a { position: relative; }
+  .nav a::after {
+    content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px;
+    background: var(--red); box-shadow: 0 0 8px var(--red-glow);
+    transition: width 0.3s cubic-bezier(0.16,1,0.3,1);
+  }
+  .nav a:hover::after { width: 100%; }
+
+  /* Buttons lift + glow */
+  .btn-ghost:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(255,255,255,0.08);
+  }
+
+  /* Step circles pulse on hover */
+  .step:hover .step-circle {
+    transform: scale(1.08);
+    box-shadow: 0 0 24px var(--red-glow), 0 0 40px rgba(255,255,255,0.1);
+  }
+  .step:hover h3 {
+    text-shadow: 0 0 16px rgba(255,255,255,0.5);
+  }
+
+  /* FAQ items highlight */
+  .faq-item:hover {
+    background: rgba(255,255,255,0.02);
+  }
+  .faq-q:hover span:nth-child(2) {
+    color: #fff;
+    text-shadow: 0 0 6px rgba(255,255,255,0.2);
+  }
+
+  /* Footer links glow */
+  .footer-col a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255,255,255,0.3);
+  }
+  .footer-col a:hover .footer-dot {
+    transform: scale(1.4);
+    transition: transform 0.2s;
+  }
+
+  /* Section kicker line grows on hover */
+  .section-kicker:hover::before {
+    width: 48px;
+    box-shadow: 0 0 12px var(--red-glow);
+  }
+
+  /* Trust numbers subtle glow */
+  .trust-strip > div:hover .trust-num {
+    text-shadow: 0 0 12px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+    transition: transform 0.2s, text-shadow 0.2s;
+  }
+
+  /* WhatsApp float pulse */
+  .wpp-float:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 28px rgba(37,211,102,0.6), 0 0 60px rgba(37,211,102,0.35);
+  }
+
+  /* Header CTA glow */
+  .header-cta:hover svg {
+    transform: translateX(3px);
+    transition: transform 0.2s;
+  }
+}
+
 /* ===== SECTION ALTERNATION ===== */
 .hero .hero-content,.final-cta-content,.footer{color:#f4f4f5}
